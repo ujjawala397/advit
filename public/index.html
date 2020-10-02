@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="IPL visualization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="~/favicon.ico">
+    <link rel="shortcut icon" href="/1.ico" type="image/ico" />
+    <link rel="shortcut icon" href="">
+    <link rel="icon" href="data:;base64,=">
+    <title>
+        IPL visualization
+    </title>
+
+</head>
+<body>
+    <h1>IPL Dataset visualization</h1>
+    <div id="input-container-2" class="box" style="margin-top: 25px;">
+        <div id="modal" class="modal">
+        <div class="box" style="min-width: 310px; height: 400px; margin: 0 auto">
+        <span class="label">Enter year:</span>
+        <select id="year" class="dropdown">
+            <option value="2008" selected>2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+          </select>
+        <button class="year-input-button" onclick="VisualizeEconomicBowler()">Submit</button>
+        <div id="top-economical" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    </div>
+ </div>
+ 
+</div>
+
+    <div id="matches-played-per-year" style="min-width: 310px; height: 400px; margin: 40px auto"></div>
+    <div id="match-win" style="min-width: 310px; height: 400px; margin: 40px auto"></div>
+    <div id="Extra-run" style="min-width: 310px; height: 400px; margin: 40px auto"></div>
+    <div id="bowler-Eco" style="min-width: 310px; height: 400px; margin: 40px auto"></div>
+    <div id="container"></div>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">
+            Bar chart showing horizontal columns. This chart type is often
+            beneficial for smaller screens, as the user can scroll through the data
+            vertically, and axis labels are easy to read.
+        </p>
+    </figure>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+    <script src="./app.js"></script>
+
+</body>
